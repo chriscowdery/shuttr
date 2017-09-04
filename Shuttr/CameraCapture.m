@@ -72,9 +72,7 @@
         }
         if (videoConnection) { break; }
     }
-    
-    NSLog(@"about to request a capture from: %@", _stillImageOutput);
-    
+        
     dispatch_semaphore_t captureSempahore = dispatch_semaphore_create(0);
     __block NSImage *image = nil;
     
